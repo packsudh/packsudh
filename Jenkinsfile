@@ -53,6 +53,7 @@ pipeline {
     stage('Certify UAT') {
       steps {
         echo 'Manually Certify'
+        input 'Do you want to certify ?'
       }
     }
 
