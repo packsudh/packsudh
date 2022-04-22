@@ -41,6 +41,7 @@ pipeline {
     stage('Deploy to UAT') {
       steps {
         echo 'Deploy to UAT'
+        jiraComment(issueKey: 'REQ-1', body: 'Pipeline completed the test and about to deploy in UAT')
       }
     }
 
